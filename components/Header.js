@@ -4,17 +4,23 @@ import { ViewGridIcon } from "@heroicons/react/solid";
 
 const Header = () => {
   return (
-    <header className="flex justify-between p-4 text-sm text-gray-600">
+    <header className="flex w-full justify-between p-4 text-sm text-gray-600">
       {/* left side */}
       <div className="flex space-x-4 items-center">
-        <p className="link">About</p>
-        <p className="link">Store</p>
+        <p className="link hidden md:inline">About</p>
+        <p className="link hidden md:inline">Store</p>
       </div>
 
       {/* Right Side */}
       <div className="flex space-x-4 items-center">
-        <p className="link">Gmail</p>
-        <p className="link">Image</p>
+        <p className="link">
+          <a href="https://mail.google.com/mail/u/0/?ogbl#">Gmail</a>
+        </p>
+        <p className="link">
+          <a href="https://www.google.com.bd/imghp?hl=en&authuser=0&ogbl">
+            Image
+          </a>
+        </p>
 
         {/* Icon */}
         <ViewGridIcon className="h-9 w-9 cursor-pointer p-2 hover:bg-gray-100 hover:rounded-full" />
