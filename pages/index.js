@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <Head>
-        <title>Next - Google</title>
+        <title>Google</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

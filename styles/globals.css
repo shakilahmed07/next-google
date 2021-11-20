@@ -9,4 +9,10 @@
   .btn {
     @apply bg-gray-100 p-2 rounded-md text-sm text-gray-800 hover:shadow-md focus:outline-none border hover:border-gray-300;
   }
+  .paginationBtn {
+    @apply flex flex-grow items-center flex-col cursor-auto hover:underline;
+  }
+  .searchProfileIcon {
+    @apply h-10 w-10 cursor-pointer p-2 hover:bg-gray-100 hover:rounded-full hidden sm:inline-flex;
+  }
 }

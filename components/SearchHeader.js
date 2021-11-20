@@ -42,26 +42,28 @@ const SearchHeader = () => {
             ref={searchInputRef}
             type="text"
             className="flex-grow px-2 w-full focus-within:outline-none"
+            defaultValue={router.query.term}
           />
           <XIcon
             className="h-6 mr-2 text-gray-500 cursor-pointer transform transition duration-100 hover:scale-125"
             onClick={() => (searchInputRef.current.value = "")}
           />
           <MicrophoneIcon
-            className="h-6 cursor-pointer
+            className="h-6 cursor-pointer hidden sm:inline-flex
           text-blue-500 mr-2 border-l-2 border-gray-300 pl-4"
           />
+
           <SearchIcon
             onClick={search}
-            className="h-6 cursor-pointer text-blue-500"
+            className="h-6 cursor-pointer text-blue-500 mr-2 border-l-2 border-gray-300 pl-2 sm:mr-0 sm:border-l-0 sm:border-gray-0"
           />
         </form>
 
         <div className="flex items-center ml-auto">
           {/* Icon */}
-          <CogIcon className="h-10 w-10 cursor-pointer p-2 hover:bg-gray-100 hover:rounded-full hidden sm:inline-flex" />
+          <CogIcon className="searchProfileIcon" />
 
-          <ViewGridIcon className="h-10 w-10 cursor-pointer p-2 hover:bg-gray-100 hover:rounded-full ml-2 hidden sm:inline-flex" />
+          <ViewGridIcon className="searchProfileIcon" />
 
           {/* Avatar */}
           <Avatar
